@@ -199,9 +199,4 @@ class FreeplayController extends Controller
             return redirect()->route('backend.freespinround.list');
         }
     }
-    public function delete(\Illuminate\Http\Request $request, $id)
-    {
-        $freespinround = \VanguardLTE\Freespinround::where('id', $id)->delete();
-        return redirect()->route('backend.freespinround.list');
-    }
 }
